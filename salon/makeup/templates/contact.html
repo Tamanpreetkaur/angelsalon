@@ -1,0 +1,67 @@
+{% extends 'basic.html' %}
+{% load static %}
+
+
+{% block css %} {% endblock %}
+{% block body %}
+<!-- contact -->
+<a name="contact"></a>
+	<div class="container-fluid" style="background-color: #212529;">
+		<div class="container" style="color: white;">
+			<div class="row">
+				<div class="col-md-12 about" style="background-color: #212529;color: white">
+					CONTACT US
+				</div>
+				<center>
+					<i class="fa fa-circle" style="font-size:12px;color: white;padding-bottom: 40px;"></i>
+						<i class="fa fa-circle" style="font-size:12px;color: white;padding-bottom: 40px;"></i>
+				</center>
+				<div class="col-md-12 line" style="color: white; padding-bottom: 30px;">
+					A beauty salon or beauty parlor (beauty parlour), or sometimes beauty shop, is an establishment dealing with cosmetic treatments for men and women. Other variations of this type of business include hair salons and spas.
+				</div>
+				<div class="col-md-12">
+					<div class="col-md-5" style="margin-top: 30px; padding-left: 30px;">
+
+							<span class="last"><i class="fa fa-map-marker" style="font-size:18px;color:white;padding-right: 10px;"></i> ADDRESS </span> <br>
+								MN 12 LINCOLN STREET NEW YORK USA <br> <br>
+							<span class="last"> <i class="fa fa-phone" style="font-size:18px;color:white;padding-right: 10px;"></i> PHONE NUMBER</span> <br>
+								+1234567890<br><br>
+							<span class="last"> <i class="fa fa-envelope-o" style="font-size:18px;color:white;padding-right: 10px;"></i> EMAIL</span> <br>
+								name@website.com
+					</div>
+					<div class="col-md-7" style="margin-top: 30px; ">
+						<form class="form-horizontal" action="/contact/" method="post">{% csrf_token %}
+							<div class="form-group">
+								<input type="text" class="form-control" id="usr" name="name" placeholder="Fullname" style="background-color:#212529;">
+							</div>
+							<div class="form-group">
+							  	<input type="email" class="form-control" id="mail" name="email" placeholder="Email" style="background-color:#212529;">
+							</div>
+							<div class="form-group">
+							  	<input type="number" class="form-control" id="pno" name="phone" placeholder="Phone no" style="background-color:#212529;">
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" rows="5" id="comment" name="desc" placeholder="Message" style="background-color:#212529;"></textarea>
+							</div>
+							<div class="form-group">
+							    <div class="col-md-offset-10 col-md-2">
+							        <button type="submit" class="btn btn-default" style="background-color: #212529;color: white;font-weight: bolder; padding-right: 15px;padding-left: 15px; font-size: 18px;">Send</button>
+							    </div>
+							</div>
+  						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="background-color: #212529;padding-bottom:60px;">
+
+			<div class="row">
+				<div class="col-md-12" style="margin-top: 60px;height: auto;">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d96679.05890710943!2d-74.02988412291079!3d40.77916432721778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x89c25897d3920da3%3A0xc7b517025a0ac4f9!2smakeup%20salon%20in%20new%20york!3m2!1d40.7791855!2d-73.95984419999999!5e0!3m2!1sen!2sin!4v1575470761050!5m2!1sen!2sin"width="100%" frameborder="0" style="border:0; width: 100%; height: 200px;" allowfullscreen=""></iframe>
+				</div>
+
+		</div>
+	</div>
+
+{% endblock %}

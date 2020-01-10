@@ -1,0 +1,60 @@
+
+
+.itemm{
+	padding-left: 10px;
+	padding-top: 30px;
+	color: white;
+	font-size: 22px;
+	font-family: comic sans ms;
+}
+
+
+.aboutf{
+	background-image: url(salon/bg2.jpg);
+	background-size:cover;
+	background-repeat: no-repeat;
+
+
+}
+.about{
+	font-family: Dutch801 XBd BT;
+
+	color: #212529;
+	text-align: center;
+	padding-top: 80px;
+	font-weight:bolder;
+	font-size: 40px;
+}
+
+.
+.menu{
+	height: auto; margin-bottom: 0px; border-radius: 0px;background-color: #212529;
+}
+.banner{
+	background-color: white;padding-left: 0px;padding-right: 0px;
+}
+
+.points{
+	font-weight: bolder;font-size: 16px;
+}
+.line{
+	height: auto;color:#424242;font-weight:bolder;text-align: center; font-size: 16px;
+}
+.servname{
+	margin: 0px; padding-top: 10px;padding-bottom: 10px;font-weight:bolder;color: #212529;
+}
+.last{
+	font-weight: bolder;font-size: 18px; color: white;
+}
+.servicess{
+	background-color: #e22b63;padding-bottom: 100px;
+}
+.sservices{
+	font-family: Dutch801 XBd BT;
+	background-color: #e22b63;
+	color: white;
+	text-align: center;
+	padding-top: 80px;
+	font-weight:bolder;
+	font-size: 40px;
+}

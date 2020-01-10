@@ -1,0 +1,41 @@
+{% extends 'basic.html' %}
+
+{% block css %} {% endblock %}
+{% block body %}
+<div class="col-md-6" style="margin-left: 250px;">
+	<h2 style="color:white">Login Form </h2>
+	<form class="form-horizontal" action="{% url 'login' %}" style="margin-top:20px;" method="post">{% csrf_token %}
+
+    <div class="form-group">
+		<input type="text" class="form-control" id="usr" placeholder="Username" name="username"
+			   style="background-color: #212529;">
+	</div>
+
+    <div class="form-group">
+		<input type="password" class="form-control" id="pwd" placeholder="Password" name="password"
+			   style="background-color: #212529;">
+	</div>
+
+	<div class="form-group">
+		<div class="col-md-offset-5 col-md-2">
+			<button type="submit" class="btn btn-default" style="background-color: #212529;color: white;
+			font-weight: bolder; padding-right: 15px;padding-left: 15px; font-size: 18px;">Login</button>
+		</div>
+	</div>
+
+		 <div class="form-group" style="color:white;font-size:16px;">
+			 <div class="col-md-offset-4 col-md-5">
+			 Don't have an account?
+		<a href="/register">Register</a>
+			 </div>
+	</div>
+	</form>
+		<div>
+{% for message in messages %}
+	<h2 style="color:white;">{{message}}</h2>
+	{% endfor %}
+</div>
+    </div>
+
+{% endblock %}
+

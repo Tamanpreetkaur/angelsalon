@@ -1,0 +1,38 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% static "images" as baseUrl %}
+
+{% block css %} {% endblock %}
+{% block body %}
+<!-- products-->
+<a name="gallery"></a>
+	<div class="container-fluid servicess">
+		<div class="container">
+			<div class="row" >
+				<div class="col-md-12 sservices">
+					PRODUCTS
+				</div>
+				<center>
+					<i class="fa fa-circle" style="font-size:12px;color: #212529;padding-bottom: 40px;"></i>
+						<i class="fa fa-circle" style="font-size:12px;color: #212529;padding-bottom: 40px;"></i>
+				</center>
+				<div class="col-md-12 line" style="color:white;padding-bottom: 30px;padding-top: 20px;">
+					A beauty salon or beauty parlor (beauty parlour), or sometimes beauty shop, is an establishment dealing with cosmetic treatments for men and women. Other variations of this type of business include hair salons and spas.
+				</div>
+
+				<div class="col-md-12" style="margin-top: 40px; padding-bottom: 50px;">
+					{% for p in dictt %}
+					  <div class="col-md-2">
+
+						    <div class="thumbnail" >
+						      <img src="{{p.img.url}}" alt="..." class="img-responsive">
+						    </div>
+						  </div>
+					{% endfor %}
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+{% endblock %}
